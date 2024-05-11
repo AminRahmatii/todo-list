@@ -1,12 +1,12 @@
 import {useCallback} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import {RootState} from '../store/RootState';
-import {TodoState} from '../components/Todo/TodoState';
 import {
   removeTodoAction,
   addTodoAction,
   addAllTodosAction,
 } from '../components/Todo/TodoActions';
+import {TodoState} from '@components/Todo/TodoState';
+import {RootState} from '@store/RootState';
 
 type UseTodoProps = {
   todos: TodoState;

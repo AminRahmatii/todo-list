@@ -1,5 +1,5 @@
+import {RootState} from '@store/RootState';
 import {TodoActionTypes, TypeKeys} from './TodoActions';
-import {RootState} from '../../store/RootState';
 
 const initialState: RootState = {
   todos: [],

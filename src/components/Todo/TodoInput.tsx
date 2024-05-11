@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useCallback, useId, useState} from 'react';
-import {useTodo} from '../../hooks/useTodo';
 import {TodoState} from './TodoState';
+import {useTodo} from '@hooks/useTodo';
 
 export const TodoInput: React.FC = () => {
   const [title, setTitle] = useState<string>('');

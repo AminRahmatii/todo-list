@@ -17,7 +17,7 @@ function TodoData() {
   return (
     <ul className="list">
       {data &&
-        data.length &&
+        data.length > 0 &&
         data.map((todo, index) => (
           <li className="item" key={todo.id}>
             <span className="title">{todo.title}</span>

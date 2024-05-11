@@ -1,4 +1,4 @@
-import {TodoState} from '../components/Todo/TodoState';
+import {TodoState} from '@components/Todo/TodoState';
 import myAPI from './api';
 export async function getTodoListAPI() {
   const response = await myAPI.get('/');
