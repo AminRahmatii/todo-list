@@ -1,13 +1,12 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "todos": [
+    { "id": "1", "title": "a title", "description": "this is task one","completed":true },
+    { "id": "2", "title": "another title", "description": "this is task two","completed":true },
+    { "id": "3", "title": "another title", "description": "this is task three","completed":false },
+    { "id": "4", "title": "another title", "description": "this is task four","completed":true },
+    { "id": "5", "title": "another title", "description": "this is task five","completed":true },
+    { "id": "6", "title": "another title", "description": "this is task six","completed":true },
+    { "id": "7", "title": "another title", "description": "this is task seven","completed":false },
+    { "id": "8", "title": "another title", "description": "this is task eight","completed":false }
+  ]
 }
