@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
 }
-.title,.description,.completed,.not-completed{margin-right: 8px;}
+.title,.description,.completed,.not-completed,input[type='text'],label{margin-right: 8px;}
 .title{
   font-weight: 600 ;
 }
@@ -15,5 +15,3 @@
   color: green;
 }
 .not-completed{color:red;}
-
-

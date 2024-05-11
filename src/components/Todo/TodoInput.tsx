@@ -2,6 +2,7 @@
 import React, {useCallback, useId, useState} from 'react';
 import {TodoState} from './TodoState';
 import {useTodo} from '@hooks/useTodo';
+import './style.css';
 
 export const TodoInput: React.FC = () => {
   const [title, setTitle] = useState<string>('');
@@ -33,8 +34,15 @@ export const TodoInput: React.FC = () => {
 
   return (
     <div style={{marginBottom: '30px'}}>
-      <input type="text" value={title} onChange={titleHandler} />
-      <input type="text" value={description} onChange={descriptionHandler} />
+      <label htmlFor="title">title</label>
+      <input type="text" name="title" value={title} onChange={titleHandler} />
+      <label htmlFor="title">description</label>
+      <input
+        type="text"
+        name="description"
+        value={description}
+        onChange={descriptionHandler}
+      />
       <input
         type="checkbox"
         id="completed"
