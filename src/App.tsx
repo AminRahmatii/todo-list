@@ -1,6 +1,11 @@
-import {Todo} from './components/Todo';
+import Todo from '@components/Todo';
+import ErrorBoundary from '@Errors';
 
 const App = () => {
-  return <Todo />;
+  return (
+    <ErrorBoundary>
+      <Todo />
+    </ErrorBoundary>
+  );
 };
 export default App;
