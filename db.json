@@ -1,12 +1,12 @@
 {
   "todos": [
     { "id": "1", "title": "a title", "description": "this is task one","completed":true },
-    { "id": "2", "title": "another title", "description": "this is task two","completed":true },
-    { "id": "3", "title": "another title", "description": "this is task three","completed":false },
-    { "id": "4", "title": "another title", "description": "this is task four","completed":true },
-    { "id": "5", "title": "another title", "description": "this is task five","completed":true },
-    { "id": "6", "title": "another title", "description": "this is task six","completed":true },
-    { "id": "7", "title": "another title", "description": "this is task seven","completed":false },
-    { "id": "8", "title": "another title", "description": "this is task eight","completed":false }
+    { "id": "2", "title": "title one", "description": "this is task two","completed":true },
+    { "id": "3", "title": "title two", "description": "this is task three","completed":false },
+    { "id": "4", "title": "title three", "description": "this is task four","completed":true },
+    { "id": "5", "title": "title four", "description": "this is task five","completed":true },
+    { "id": "6", "title": "title five", "description": "this is task six","completed":true },
+    { "id": "7", "title": "title six", "description": "this is task seven","completed":false },
+    { "id": "8", "title": "title seven", "description": "this is task eight","completed":false }
   ]
 }
