@@ -1,26 +1,40 @@
-import ErrorBoundary from '@Errors';
+import {useEffect} from 'react';
 import {useTodo} from '@hooks/useTodo';
 import {TodoInput} from './TodoInput';
 import {getTodoListAPI} from '@services/todo';
+import ErrorBoundary from '@Errors';
 import './style.css';
 
-export async function Todo() {
-  const {todos, removeTodo} = useTodo();
-  const data = await getTodoListAPI();
+const Todo = () => {
+  const {todos, removeTodo, addAllTodos} = useTodo();
+  const data = todos ?? [];
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getTodoListAPI();
+      addAllTodos(data);
+    };
+    fetchData();
+  }, [addAllTodos]);
+
   return (
     <div>
       <h1>Todo list</h1>
       <TodoInput />
       <ErrorBoundary>
         <ul className="list">
-          {data.map((todo) => (
-            <li className="item" key={todo.id}>
-              {todo.title}
-              <button onClick={() => removeTodo(todo.id)}>Delete</button>
-            </li>
-          ))}
+          {data &&
+            data.length &&
+            data.map((todo, index) => (
+              <li className="item" key={todo.id}>
+                {todo.title}
+                <button onClick={() => removeTodo(index)}>Delete</button>
+              </li>
+            ))}
         </ul>
       </ErrorBoundary>
     </div>
   );
-}
+};
+
+export default Todo;
